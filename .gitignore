@@ -13,6 +13,5 @@
 # macOS
 .DS_Store
 
-# VS Code (keep settings if needed, or ignore workspace storage)
-.vscode/*
-!.vscode/settings.json
+# VS Code
+.vscode/
