@@ -36,8 +36,8 @@ Java Practice and Assignment Repository for Semester 3.
 
 ### Session 5: Access Modifiers, Encapsulation & JavaBeans
 - **Work Done**:
-  - **Class Problems**: Implemented `BookingReceipt`, `CineScreen`, `GroupBookingReceipt`, `MovieBookingProfile`, `MovieTicket`, `MovieTicketAccessChecker`, `PremiumMovieTicket`, `SettlementProcessor`, and `SubclassTicketAccessChecker`.
-  - **Assignment Problems**: Implemented `BookInventory`, `CirculationLedger`, `LibraryMember`, `LoanReceipt`, `MembershipReachChecker`, `ReferenceDeskReachChecker`, and `ReferenceOnlyLoanReceipt`.
+  - **Class Problems**: Implemented `MovieTicketAccessChecker`, `SubclassTicketAccessChecker`, `CineScreen`, `MovieBookingProfile`, and `SettlementProcessor`.
+  - **Assignment Problems**: Implemented `MembershipReachChecker`, `ReferenceDeskReachChecker`, `BookInventory`, `LibraryMember`, and `CirculationLedger`.
 - **Key Concepts**: Access modifiers (`private`, `protected`, `public`, package-private), JavaBean getter/setter conventions, `Serializable`, write-only properties (OTP, security answers).
 - **Issues & Resolutions**: Resolved compiler warnings for write-only security fields using `@SuppressWarnings("unused")`.
 

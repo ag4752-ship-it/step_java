@@ -1,5 +1,19 @@
 package session_five_topics.class_problems;
 
+class PremiumMovieTicket extends MovieTicket {
+    private double discountRate;
+
+    public PremiumMovieTicket(String seatNumber, String screenId, double ticketPrice, String movieTitle, double discountRate) {
+        super(seatNumber, screenId, ticketPrice, movieTitle);
+        this.discountRate = discountRate;
+    }
+
+    public double getDiscountedPrice() {
+        // Subclass can access protected ticketPrice directly
+        return this.ticketPrice * (1.0 - discountRate);
+    }
+}
+
 public class SubclassTicketAccessChecker {
 
     public static String classifyAccess(String fieldModifier, String accessorContext) {
@@ -51,5 +65,8 @@ public class SubclassTicketAccessChecker {
         System.out.println(classifyAccess("protected", "SUBCLASS_DIFFERENT_PACKAGE_PARENT_TYPE")); // "DENIED"
         System.out.println(classifyAccess("private", "SUBCLASS_DIFFERENT_PACKAGE_OWN_TYPE"));      // "DENIED"
         System.out.println(classifyAccess("default", "SUBCLASS_DIFFERENT_PACKAGE_OWN_TYPE"));      // "DENIED"
+
+        PremiumMovieTicket premium = new PremiumMovieTicket("VIP-1", "SCR-IMAX", 500.0, "Interstellar", 0.10);
+        System.out.println("Discounted Price: " + premium.getDiscountedPrice());
     }
 }
