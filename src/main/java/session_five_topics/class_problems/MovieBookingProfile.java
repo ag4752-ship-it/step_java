@@ -7,6 +7,7 @@ public class MovieBookingProfile implements Serializable {
 
     private String name;
     private boolean confirmed;
+    @SuppressWarnings("unused")
     private String otp;
 
     public MovieBookingProfile() {
