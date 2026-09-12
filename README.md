@@ -41,11 +41,16 @@ Java Practice and Assignment Repository for Semester 3.
 - **Key Concepts**: Access modifiers (`private`, `protected`, `public`, package-private), JavaBean getter/setter conventions, `Serializable`, write-only properties (OTP, security answers).
 - **Issues & Resolutions**: Resolved compiler warnings for write-only security fields using `@SuppressWarnings("unused")`.
 
+### Session 6: Data Structures & Collections (Trees, Queues, Maps)
+- **Work Done**:
+  - **Assignment Problems**: Implemented `BatchEnrollmentValidator`, `CirculationReport`, `FineLedger`, `MembershipTree`, and `NightlyCirculationAudit`.
+- **Key Concepts**: Binary Search Trees, sorting, Map/Queue operations, audit and ledger management.
+
 ---
 
 ## 🚀 Next Steps
-- Implement and test **Session 6** topics (Data Structures / Tree & Ledger structures: `FineLedger`, `MembershipTree`, `NightlyCirculationAudit`, `BatchEnrollmentValidator`, `CirculationReport`).
 - Merge feature branches into `develop` as sessions complete.
+- Continue session assignments and test coverage.
 
 ---
 
@@ -60,3 +65,4 @@ Java Practice and Assignment Repository for Semester 3.
 | `feature/session_3` | Session 3 Work | `session_three_topics/` (Class & Assignment) |
 | `feature/session_4` | Session 4 Work | `session_four_topics/` (Class & Assignment) |
 | `feature/session_5` | Session 5 Work | `session_five_topics/` (Class & Assignment) |
+| `feature/session_6` | Session 6 Work | `session_six_topics/` (Assignment) |
