@@ -1,4 +1,4 @@
-package session_six_topics.assignment_problems;
+package session_six_topics.class_problems;
 
 public class MembershipTree {
 
