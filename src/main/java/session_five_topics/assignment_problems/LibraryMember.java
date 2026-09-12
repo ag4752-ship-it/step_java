@@ -10,6 +10,7 @@ public class LibraryMember implements Serializable {
     private String membershipId;
     private String name;
     private boolean premiumMember;
+    @SuppressWarnings("unused")
     private String securityAnswerHash;
 
     public LibraryMember() {
