@@ -12,6 +12,10 @@ public class Student {
         studentCount++;
     }
 
+    public void displayDetails() {
+        System.out.println("Student Name: " + name + ", Attendance: " + attendance + "%");
+    }
+
     public static void printCollegeInfo() {
         System.out.println(collegeName);
         System.out.println("Students created: " + studentCount);
@@ -20,6 +24,9 @@ public class Student {
     public static void main(String[] args) {
         Student s1 = new Student("Ananya", 85);
         Student s2 = new Student("Rohan", 92);
+
+        s1.displayDetails();
+        s2.displayDetails();
 
         System.out.println("2 Student objects created");
         Student.printCollegeInfo();
