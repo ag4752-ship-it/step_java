@@ -2,6 +2,53 @@ package session_five_topics.assignment_problems;
 
 import java.util.Arrays;
 
+class LoanReceipt {
+    private final String memberId;
+    private final String[] bookIds;
+
+    public LoanReceipt(String memberId, String[] bookIds) {
+        this.memberId = memberId;
+        this.bookIds = (bookIds != null) ? bookIds.clone() : new String[0];
+    }
+
+    public String getMemberId() {
+        return memberId;
+    }
+
+    public String[] getBookIds() {
+        return (bookIds != null) ? bookIds.clone() : new String[0];
+    }
+
+    public LoanReceipt withCorrectedBookId(int index, String newId) {
+        String[] updatedBookIds = (this.bookIds != null) ? this.bookIds.clone() : new String[0];
+        if (index >= 0 && index < updatedBookIds.length) {
+            updatedBookIds[index] = newId;
+        }
+        return new LoanReceipt(this.memberId, updatedBookIds);
+    }
+
+    @Override
+    public String toString() {
+        return "LoanReceipt{" +
+                "memberId='" + memberId + '\'' +
+                ", bookIds=" + Arrays.toString(bookIds) +
+                '}';
+    }
+}
+
+class ReferenceOnlyLoanReceipt extends LoanReceipt {
+    private final String roomNumber;
+
+    public ReferenceOnlyLoanReceipt(String memberId, String[] bookIds, String roomNumber) {
+        super(memberId, bookIds);
+        this.roomNumber = roomNumber;
+    }
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+}
+
 public class CirculationLedger {
     public static String branchCode;
 

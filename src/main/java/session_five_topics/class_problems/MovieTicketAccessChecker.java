@@ -1,5 +1,51 @@
 package session_five_topics.class_problems;
 
+class MovieTicket {
+    private String seatNumber;
+    String screenId;
+    protected double ticketPrice;
+    public String movieTitle;
+
+    public MovieTicket(String seatNumber, String screenId, double ticketPrice, String movieTitle) {
+        this.seatNumber = seatNumber;
+        this.screenId = screenId;
+        this.ticketPrice = ticketPrice;
+        this.movieTitle = movieTitle;
+    }
+
+    public String getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(String seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public String getScreenId() {
+        return screenId;
+    }
+
+    public void setScreenId(String screenId) {
+        this.screenId = screenId;
+    }
+
+    public double getTicketPrice() {
+        return ticketPrice;
+    }
+
+    public void setTicketPrice(double ticketPrice) {
+        this.ticketPrice = ticketPrice;
+    }
+
+    public String getMovieTitle() {
+        return movieTitle;
+    }
+
+    public void setMovieTitle(String movieTitle) {
+        this.movieTitle = movieTitle;
+    }
+}
+
 public class MovieTicketAccessChecker {
 
     public static String classifyAccess(String fieldModifier, String accessorContext) {
@@ -60,5 +106,12 @@ public class MovieTicketAccessChecker {
             {"public", "DIFFERENT_PACKAGE"}
         };
         System.out.println(summarizeBatch(batch)); // "Allowed: 2 | Denied: 1"
+
+        // Verify MovieTicket field access levels
+        MovieTicket ticket = new MovieTicket("A12", "SCR-01", 250.0, "Inception");
+        System.out.println("Movie: " + ticket.movieTitle);
+        System.out.println("Screen: " + ticket.screenId);
+        System.out.println("Price: " + ticket.ticketPrice);
+        System.out.println("Seat: " + ticket.getSeatNumber());
     }
 }
