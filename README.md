@@ -46,6 +46,12 @@ Java Practice and Assignment Repository for Semester 3.
   - **Class Problems**: Implemented `BatchEnrollmentValidator`, `CirculationReport`, `FineLedger`, `MembershipTree`, and `NightlyCirculationAudit`.
   - **Assignment Problems**: Implemented `GymTrialSignUpValidator`, `ThreeTiersGymMembership`, `LateFeeLedger`, `MonthlyAttendanceAnnouncer`, and `WeeklyCheckInSettlement`.
 - **Key Concepts**: Single/multilevel/hierarchical inheritance, runtime polymorphism, constructor validation & chaining (`super`), guarded downcasting with `instanceof`, defensive copying for immutability, overloaded methods, static tracking counters.
+### Session 7: Interfaces, Abstract Classes, Multilevel Inheritance & Polymorphism
+- **Work Done**:
+  - **Class Problems**: Implemented `TalkingToyBox`, `WarehouseLabelPrinter`, `OrchestraWarmUpRoutine`, `SmartKitchenAssistant`, and `PackageDropOffLog`.
+  - **Assignment Problems**: Implemented `MorningWakeUpCircuit`, `GalleryDescriptionCards`, `BackyardToolshedRoutine`, `DigitalClassroomSetup`, and `SkylineDeliveryFleet`.
+- **Key Concepts**: Interface implementation, abstract classes, static tracking counters via `super()`, multilevel inheritance method chaining, method overloading (compile-time polymorphism), JavaBean validation with range constraints, safe type casting with `instanceof`.
+- **Issues & Resolutions**: Ensured constructor validation for non-blank inputs and correctly chained `super` method calls across inheritance tiers.
 
 ---
 
@@ -67,3 +73,5 @@ Java Practice and Assignment Repository for Semester 3.
 | `feature/session_4` | Session 4 Work | `session_four_topics/` (Class & Assignment) |
 | `feature/session_5` | Session 5 Work | `session_five_topics/` (Class & Assignment) |
 | `feature/session_6` | Session 6 Work | `session_six_topics/` (Class & Assignment) |
+| `feature/session_7` | Session 7 Work | `session_seven_topics/` (Class & Assignment) |
+
