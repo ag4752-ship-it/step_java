@@ -53,6 +53,20 @@ Java Practice and Assignment Repository for Semester 3.
 - **Key Concepts**: Interface implementation, abstract classes, static tracking counters via `super()`, multilevel inheritance method chaining, method overloading (compile-time polymorphism), JavaBean validation with range constraints, safe type casting with `instanceof`.
 - **Issues & Resolutions**: Ensured constructor validation for non-blank inputs and correctly chained `super` method calls across inheritance tiers.
 
+### Session 8: Object-Oriented Design & Real-World Domain Workflows
+- **Work Done**:
+  - **Class Problems**: Implemented `VehicleRentalSystem`, `EmployeeLeaveRequestWorkflow`, `OnlineExaminationSystem`, `HotelBookingSystem`, and `PaymentProcessingShoppingSystem`.
+  - **Assignment Problems**: Implemented `HostelLaundryQueue`, `AssignmentSubmissionPortal`, `CampusPremiereTicketCounter`, `FitZoneMembershipDesk`, and `CampusNoticeBroadcaster`.
+- **Key Concepts**: Domain-driven object modeling, interface/abstract class hierarchies for dynamic pricing and evaluation rules, lifecycle state machines (guarded transitions, terminal states), availability conflict detection, multi-channel notification dispatch.
+- **Issues & Resolutions**: Enforced strict state transition checks to prevent invalid reversions from terminal states (e.g., Graded, Expired, Approved/Rejected).
+
+### Session 9: Data Structures (Arrays, Hashing, Two Pointers, Binary Search)
+- **Work Done**:
+  - **Class Problems**: Implemented `LibraryCatalogLookup`, `WarehouseGridSummary`, `PairWithTargetSum`, and `MaximizeAreaTwoBoundaries`.
+  - **Assignment Problems**: Implemented `ClassTopperFinder`, `MergingTwoTokenQueues`, `MostPopularCanteenOrder`, `HotWeatherAlertWindows`, and `TicketPriceSlotFinder`.
+- **Key Concepts**: Binary search on sorted structures ($O(\log n)$), 2D matrix sum and coordinate tracking ($O(m \times n)$), single-pass HashSet complement lookup ($O(n)$), two-pointer greedy container area maximization ($O(n)$), linear merge of sorted queues ($O(m+n)$), fixed-size sliding window with running sum ($O(n)$).
+- **Issues & Resolutions**: Replaced repeated window sum recalculations with sliding window delta updates to achieve optimal linear time complexity.
+
 ---
 
 ## 🚀 Next Steps
@@ -74,4 +88,7 @@ Java Practice and Assignment Repository for Semester 3.
 | `feature/session_5` | Session 5 Work | `session_five_topics/` (Class & Assignment) |
 | `feature/session_6` | Session 6 Work | `session_six_topics/` (Class & Assignment) |
 | `feature/session_7` | Session 7 Work | `session_seven_topics/` (Class & Assignment) |
+| `feature/session_8` | Session 8 Work | `session_eight_topics/` (Class & Assignment) |
+| `feature/session_9` | Session 9 Work | `session_nine_topics/` (Class & Assignment) |
+
 
