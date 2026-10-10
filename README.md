@@ -67,6 +67,13 @@ Java Practice and Assignment Repository for Semester 3.
 - **Key Concepts**: Binary search on sorted structures ($O(\log n)$), 2D matrix sum and coordinate tracking ($O(m \times n)$), single-pass HashSet complement lookup ($O(n)$), two-pointer greedy container area maximization ($O(n)$), linear merge of sorted queues ($O(m+n)$), fixed-size sliding window with running sum ($O(n)$).
 - **Issues & Resolutions**: Replaced repeated window sum recalculations with sliding window delta updates to achieve optimal linear time complexity.
 
+### Session 10: OOP Hierarchies, Contracts & Singly Linked Lists
+- **Work Done**:
+  - **Class Problems**: Implemented `BankAccountWithdrawalSystem`, `CampusVehiclePassSystem`, `StudentClubRegistrationManagement`, `ClassMarksGridAnalysis`, and `PayrollRegisterSystem`.
+  - **Assignment Problems**: Implemented `PriorityTokenInsertion`, `CancelledOrdersCleanup`, and `ReverseTheQueue`.
+- **Key Concepts**: Polymorphic account constraints (overdraft vs minimum balance), capability interfaces (`Chargeable`), object identity vs equivalence (`equals`/`hashCode`), multi-attribute matrix summaries, custom singly linked list operations (`addFirst`, `addLast`, `insertAt`, `removeAll`, and in-place `reverse` with 3 pointers).
+- **Issues & Resolutions**: Built node pointer modifications directly without library collections, handling boundary cases for head removal and in-place pointer reversal.
+
 ---
 
 ## 🚀 Next Steps
@@ -90,5 +97,7 @@ Java Practice and Assignment Repository for Semester 3.
 | `feature/session_7` | Session 7 Work | `session_seven_topics/` (Class & Assignment) |
 | `feature/session_8` | Session 8 Work | `session_eight_topics/` (Class & Assignment) |
 | `feature/session_9` | Session 9 Work | `session_nine_topics/` (Class & Assignment) |
+| `feature/session_10` | Session 10 Work | `session_ten_topics/` (Class & Assignment) |
+
 
 
